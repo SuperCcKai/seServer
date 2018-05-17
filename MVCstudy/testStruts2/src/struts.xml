@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+    	<!-- name action的名字，访问时使用helloworld.action访问，class：实现类 -->
+    	<action name="helloWorld" class="spcckai.HelloWorldAction" >
+    		<!-- 结果集，即action中SUCCESS返回的视图 -->
+    		<result>
+    			/result.jsp
+    		</result>
+    	</action>
+    </package>
+</struts>

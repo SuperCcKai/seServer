@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper  
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="_dao.loginSystem.StudentDAO">  
+  
+    <!--往students表中插入学生信息-->  
+    <insert id="insertStudent" parameterType="Student" keyProperty="id" useGeneratedKeys="true">  
+        insert into student(stuID,stuName,stuPassword) values(#{stuID},#{stuName},#{stuPassword})  
+    </insert>  
+  
+    <!--根据学号删除相关的学生信息-->  
+    <delete id="deleteStudentByNumber">  
+        delete from student where number=#{number}  
+    </delete>  
+  
+    <!--根据学号更新相关的学生信息-->  
+    <update id="updateStudentByNumber" parameterType="Student">  
+        update student set name=#{name},age=#{age,jdbcType=VARCHAR},gender=#{gender,typeHandler=org.apache.ibatis.type.EnumTypeHandler} where number=#{number}  
+    </update>  
+  
+    <!--根据学号查询相关的学生信息-->  
+    <select id="getStudentById" resultType="Student">  
+        select * from student where number=#{number}  
+    </select>  
+  
+</mapper> 

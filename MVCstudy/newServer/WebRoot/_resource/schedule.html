@@ -1,0 +1,281 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>学生课表查询</title>
+
+<link href="css/OA_background.css" rel=stylesheet>
+<STYLE>
+	  fc\:webprint 
+	  {
+	    behavior: url(include/Print/webprint/webgrid.htc) ;
+	  fc\:fc_code 
+	  {
+	    behavior: url(include/Print/webprint/fc_code.htc) ;
+	  }
+</STYLE>
+<script id="clientEventHandlersJS" language="javascript">
+ function doPrint(){
+ window.document.forms[0].action='ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS?Print=print&Title=学生课表';
+ window.document.forms[0].target='_blank';
+ window.document.forms[0].submit();
+ }
+
+ function doQuery(){
+ window.document.forms[0].action='ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS';
+ window.document.forms[0].target='_self';
+ window.document.forms[0].submit();
+ }
+</script>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow:hidden">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" class=tableborder>
+  <tr> 
+    <td  background="include/Frame/images/SilverBar.gif" height="30" class="caption">&nbsp;&nbsp;
+学生课表查询
+</td>
+  </tr>
+  <tr> 
+    <td valign="top" align="center" height="100%">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+ <form name="" action="" method="post" target="">
+  <tr align="left" valign="top">
+    <td width="100%" height="30" align="center">
+	<table width="100%" height="30" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;姓名:&nbsp;庞凯&nbsp;&nbsp;&nbsp;&nbsp;学号:&nbsp;20154445&nbsp;</td>
+
+
+            <td width="270" align="right" nowrap>学年学期&nbsp;
+              <select name="YearTermNO" style="width:200px">
+            <option value="1">2011-2012学年第一学期</option><option value="2">2011-2012学年第二学期</option><option value="3">2012-2013学年第一学期</option><option value="4">2012-2013学年第二学期</option><option value="5">2013-2014学年第一学期</option><option value="6">2013-2014学年第二学期</option><option value="7">2014-2015学年第一学期</option><option value="8">2014-2015学年第二学期</option><option value="9">2015-2016学年第一学期</option><option value="10">2015-2016学年第二学期</option><option value="11">2016-2017学年第一学期</option><option value="12">2016-2017学年第二学期</option><option value="13">2017-2018学年第一学期</option><option value="14" selected>2017-2018学年第二学期</option><option value="15">2018-2019学年秋季学期</option><option value="16">2018-2019学年春季学期</option><option value="17">2018-2019学年夏季学期</option></select></td>
+            <td width="100" class="td_a" align="right"><input name="bt_Query" class="button" type="button" style="width:80" onclick="doQuery()" value="查询"></td>
+            <td width="100" class="td_a" align="center"><input name="bt_Print" class="button" type="button" style="width:80" onclick="doPrint()" value="打印"></td>
+          </tr>
+        </table>
+
+</td>
+  </tr>
+</form>
+ <tr><td valign="top" align="center"><table width="96%" height="100%" border="1" cellpadding="0" cellspacing="0"><tr><td align="center">
+  	<div style="overflow:auto;width:100%;height:100%">
+	
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" frame="box">
+<colgroup>
+   <col style="width:30px">
+
+   <col style="width:14%">
+
+   <col style="width:14%">
+
+   <col style="width:14%">
+
+   <col style="width:14%">
+
+   <col style="width:14%">
+
+   <col style="width:14%">
+
+   <col style="width:14%">
+
+</colgroup>
+      <tr style="height:30px">
+        <td align="center"  class="color-header"  colspan="8" class="color-header"  style="font-size:14px ; font-weight:700">东北大学2017-2018学年第二学期学生课表</td>
+      </tr>
+
+      <tr style="height:20px">
+        <td colspan="8" valign="bottom" nowrap style="font-size:12px;border-top:none;border-right:none ;border-bottom:.5pt solid #B4E2A4;border-left:none">院系:计算机科学与工程学院&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专业:计算机科学与技术&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;班级:计算机1506&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学号:20154445&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名:庞凯</td>
+      </tr>
+      <tr style="height:20px">
+        <td style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:.5pt solid #B4E2A4;text-align:center;vertical-align:middle"  class="color-header" >&nbsp;</td>
+    
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期一MON</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期二TUE</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期三WED</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期四THU</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期五FRI</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期六SAT</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期日SUN</td>
+	
+      </tr>
+  
+      <tr style="height:100px">
+        <td align="center" valign="middle" style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:.5pt solid #B4E2A4;text-align:center;vertical-align:middle"  class="color-header" > 1<br style="mso-data-placement:same-cell">/<br style="mso-data-placement:same-cell"> 2</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">数据库原理<br style="mso-data-placement:same-cell">申德荣<br style="mso-data-placement:same-cell">1号A403<br style="mso-data-placement:same-cell">1-13周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">人工智能<br style="mso-data-placement:same-cell">马安香<br style="mso-data-placement:same-cell">信息A109<br style="mso-data-placement:same-cell">11-18周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">计算机体系结构<br style="mso-data-placement:same-cell">于亚新<br style="mso-data-placement:same-cell">信息A113<br style="mso-data-placement:same-cell">10-19周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">软件工程<br style="mso-data-placement:same-cell">高岩<br style="mso-data-placement:same-cell">1号A107<br style="mso-data-placement:same-cell">1-12周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">人工智能<br style="mso-data-placement:same-cell">马安香<br style="mso-data-placement:same-cell">文管A447<br style="mso-data-placement:same-cell">11-18周  2节<br style="mso-data-placement:same-cell">软件建模技术<br style="mso-data-placement:same-cell">杨雷<br style="mso-data-placement:same-cell">生命B101<br style="mso-data-placement:same-cell">1-10周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+      </tr>
+  
+      <tr style="height:100px">
+        <td align="center" valign="middle" style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:.5pt solid #B4E2A4;text-align:center;vertical-align:middle"  class="color-header" > 3<br style="mso-data-placement:same-cell">/<br style="mso-data-placement:same-cell"> 4</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">操作系统<br style="mso-data-placement:same-cell">王大玲<br style="mso-data-placement:same-cell">1号A304<br style="mso-data-placement:same-cell">1-14周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">软件工程<br style="mso-data-placement:same-cell">高岩<br style="mso-data-placement:same-cell">1号A301<br style="mso-data-placement:same-cell">1-12周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">操作系统<br style="mso-data-placement:same-cell">王大玲<br style="mso-data-placement:same-cell">1号A107<br style="mso-data-placement:same-cell">1-14周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">计算机体系结构<br style="mso-data-placement:same-cell">于亚新<br style="mso-data-placement:same-cell">1号A304<br style="mso-data-placement:same-cell">10-19周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+      </tr>
+  
+      <tr style="height:100px">
+        <td align="center" valign="middle" style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:.5pt solid #B4E2A4;text-align:center;vertical-align:middle"  class="color-header" > 5<br style="mso-data-placement:same-cell">/<br style="mso-data-placement:same-cell"> 6</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">毕业生就业指导<br style="mso-data-placement:same-cell">石昌远<br style="mso-data-placement:same-cell">1号B318<br style="mso-data-placement:same-cell">3-6周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">信息安全基础<br style="mso-data-placement:same-cell">董晓梅<br style="mso-data-placement:same-cell">1号A402<br style="mso-data-placement:same-cell">1-8周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">信息安全基础<br style="mso-data-placement:same-cell">董晓梅<br style="mso-data-placement:same-cell">1号A105<br style="mso-data-placement:same-cell">1-8周  2节<br style="mso-data-placement:same-cell">软件建模技术<br style="mso-data-placement:same-cell">杨雷<br style="mso-data-placement:same-cell">生命B401<br style="mso-data-placement:same-cell">11-12周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">数据库原理<br style="mso-data-placement:same-cell">申德荣<br style="mso-data-placement:same-cell">1号A105<br style="mso-data-placement:same-cell">1-13周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+      </tr>
+  
+      <tr style="height:100px">
+        <td align="center" valign="middle" style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:.5pt solid #B4E2A4;text-align:center;vertical-align:middle"  class="color-header" > 7<br style="mso-data-placement:same-cell">/<br style="mso-data-placement:same-cell"> 8</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">嵌入式系统及其应用<br style="mso-data-placement:same-cell">刘辉林<br style="mso-data-placement:same-cell">建筑A102<br style="mso-data-placement:same-cell">11-18周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">嵌入式系统及其应用<br style="mso-data-placement:same-cell">刘辉林<br style="mso-data-placement:same-cell">建筑A102<br style="mso-data-placement:same-cell">11-18周  2节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">文本智能处理技术<br style="mso-data-placement:same-cell">王会珍<br style="mso-data-placement:same-cell">1号A102<br style="mso-data-placement:same-cell">6周  3节</td>
+    
+      </tr>
+  
+      <tr style="height:100px">
+        <td align="center" valign="middle" style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:.5pt solid #B4E2A4;text-align:center;vertical-align:middle"  class="color-header" > 9<br style="mso-data-placement:same-cell">/<br style="mso-data-placement:same-cell">10</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">文本智能处理技术<br style="mso-data-placement:same-cell">王会珍<br style="mso-data-placement:same-cell">建筑A302<br style="mso-data-placement:same-cell">1-4.6-8周  3节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">网络编程技术<br style="mso-data-placement:same-cell">程经纬<br style="mso-data-placement:same-cell">建筑A302<br style="mso-data-placement:same-cell">3-13周  3节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">文本智能处理技术<br style="mso-data-placement:same-cell">王会珍<br style="mso-data-placement:same-cell">1号A102<br style="mso-data-placement:same-cell">6周  3节</td>
+    
+      </tr>
+  
+      <tr style="height:100px">
+        <td align="center" valign="middle" style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:.5pt solid #B4E2A4;text-align:center;vertical-align:middle"  class="color-header" >11<br style="mso-data-placement:same-cell">/<br style="mso-data-placement:same-cell">12</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">文本智能处理技术<br style="mso-data-placement:same-cell">王会珍<br style="mso-data-placement:same-cell">建筑A302<br style="mso-data-placement:same-cell">1-4.6-8周  3节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">网络编程技术<br style="mso-data-placement:same-cell">程经纬<br style="mso-data-placement:same-cell">建筑A302<br style="mso-data-placement:same-cell">3-13周  3节</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#EBFFE1">&nbsp;</td>
+    
+        <td valign="top" style="font-size:10px;border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal" bgcolor="#FFFFFF">&nbsp;</td>
+    
+      </tr>
+  
+      <tr style="height:20px">
+        <td style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:.5pt solid #B4E2A4;text-align:center;vertical-align:middle"  class="color-header" >&nbsp;</td>
+    
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期一MON</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期二TUE</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期三WED</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期四THU</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期五FRI</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期六SAT</td>
+	
+        <td align="center" nowrap style="border-top:none;border-right:.5pt solid #B4E2A4;border-bottom:.5pt solid #B4E2A4;border-left:none;white-space:normal"  class="color-header" >星期日SUN</td>
+	
+      </tr>
+     
+</table>	
+	</div>
+</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>

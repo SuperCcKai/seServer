@@ -1,0 +1,5 @@
+package _servlet._spider._searchSchedule;
+
+public class SearScheduleServlet {
+
+}

@@ -1,0 +1,55 @@
+package _servlet._spider._searchSchedule;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.message.BasicNameValuePair;
+
+/**
+ * 查询全院班级课表
+ * @author supercckai
+ *
+ */
+public class SearScheduleServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		//req表单请求参数包括 年级、专业、班级(默认学院为 计算机学院)
+		String urlStr = "https://zhjw.neu.edu.cn/ACTIONQUERYCLASSSCHEDULE.APPPROCESS";
+		//创建默认httpClient
+		CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+		//创建httpPost
+		HttpPost httpPost = new HttpPost(urlStr);
+		//创建参数队列
+		List<NameValuePair> formParams = new ArrayList<NameValuePair>();
+		//学院
+		formParams.add(new BasicNameValuePair("DeptNO", "37") );
+		//年级
+		formParams.add(new BasicNameValuePair("ComeYear", "2015") );
+		//学年学期
+		formParams.add(new BasicNameValuePair("YearTermNO", "14") );
+		//专业
+		formParams.add(new BasicNameValuePair("YearTermNO", "14") );
+		//班级
+		formParams.add(new BasicNameValuePair("YearTermNO", "14") );
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		doGet(req, resp);
+	}
+	
+}

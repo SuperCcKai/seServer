@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;spcckai.test&apos; to &apos;downloadText&apos;&#x0D;&#x0A;- Original project: &apos;testHttp&apos;&#x0D;&#x0A;- Original element: &apos;spcckai.test&apos;&#x0D;&#x0A;- Renamed element: &apos;spcckai.downloadText&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;test&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;spcckai{test.java[test" matchStrategy="1" name="downloadText" qualified="false" references="true" similarDeclarations="false" stamp="1525339369607" textual="false" version="1.0"/>
+</session>

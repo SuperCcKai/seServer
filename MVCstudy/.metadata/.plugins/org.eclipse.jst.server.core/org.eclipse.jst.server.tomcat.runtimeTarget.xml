@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<classpath>
+  <source-attachment entry="D:/tomcat/lib/jsp-api.jar" runtime-id="Apache Tomcat v8.0" source-attachment-path="/testJSP/WebContent/WEB-INF/lib/jsp-api-2.1-sources.jar"/>
+</classpath>

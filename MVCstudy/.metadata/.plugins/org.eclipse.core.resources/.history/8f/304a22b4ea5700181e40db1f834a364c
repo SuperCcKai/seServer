@@ -1,0 +1,11 @@
+package _servlet.loginSystem;
+/**
+ * ²âÊÔÑ§Éú×¢²á
+ * @author supercckai
+ *
+ */
+public class _TestRegisterOfStu {
+	
+	String jsonStr = "{}";
+	
+}

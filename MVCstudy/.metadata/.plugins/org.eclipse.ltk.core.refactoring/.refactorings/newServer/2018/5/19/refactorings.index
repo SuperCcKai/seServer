@@ -1,0 +1,69 @@
+1525577420554	Rename type 'loginCheck'
+1525583431131	Delete element
+1525654877404	Rename type 'SocketServlet'
+1525654890020	Copy compilation unit
+1525655995937	Rename type 'SockeClientServlet'
+1525662124185	Delete elements
+1525662184241	Delete elements
+1525662191144	Delete element
+1525664827667	Copy compilation unit
+1525664975695	Rename compilation unit 'labelMng.java'
+1525672791549	Copy file
+1525694026028	Move compilation unit
+1525779529122	Delete element
+1525779587615	Rename package 'servlet'
+1525779598957	Copy compilation units
+1525779707515	Delete elements
+1525779725352	Copy compilation units
+1525779756747	Copy compilation units
+1525779773236	Delete elements
+1525779776569	Copy compilation units
+1525779829274	Rename type 'LabelMng'
+1525779851354	Copy compilation unit
+1525779901090	Copy compilation units
+1525779934837	Copy compilation units
+1525779960337	Copy compilation units
+1525779996945	Copy compilation units
+1525780080148	Delete element
+1525780641527	Copy compilation unit
+1525780649257	Delete element
+1525780666706	Delete element
+1525780670702	Delete element
+1525780687576	Copy compilation unit
+1525780699675	Delete element
+1525780708487	Copy compilation unit
+1525780762349	Delete element
+1525780775639	Delete element
+1525780789788	Delete element
+1525780930963	Rename package 'dao'
+1525780964964	Rename package 'utils'
+1525781068954	Copy compilation unit
+1525781085015	Delete element
+1525781154389	Copy compilation unit
+1525781164281	Delete element
+1525781193400	Delete element
+1525781229190	Copy files
+1525781236798	Delete element
+1525782237706	Delete element
+1525782527568	Rename type 'test1'
+1525782543751	Delete element
+1525782570592	Rename type 'userDAO'
+1525782653655	Copy compilation unit
+1525782688582	Rename type 'RegisterOfTeaServlet'
+1525782714571	Rename type 'AddLabelServlet'
+1525783480803	Move compilation unit
+1525783530712	Delete element
+1526094098160	Delete element
+1526094112714	Delete element
+1526109933543	Rename package '_utils.servletUtil'
+1526114137086	Copy compilation unit
+1526126008231	Rename resource 'Teacher1.html'
+1526127499364	Delete elements
+1526127624510	Rename resource 'index.html'
+1526128497841	Rename resource 'sign-up.html'
+1526131001678	Rename resource 'Teacher1.jsp'
+1526131168018	Rename resource 'sign_in.html'
+1526131209640	Rename resource 'sign_in.jsp'
+1526131771665	Rename resource '404.jsp'
+1526131954828	Rename resource 'style_404.css'
+1526132152279	Rename resource 'style_error.css'

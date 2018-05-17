@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <!-- 错误页面 -->
+  <error-page>  
+    <error-code>404</error-code>   
+    <location>/404.html</location>   
+   </error-page>  
+  <!-- 教师注册 -->
+  <servlet>
+    <servlet-name>RegisterOfTeaServlet</servlet-name>
+    <servlet-class>_servlet.loginSystem.RegisterOfTeaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterOfTeaServlet</servlet-name>
+    <url-pattern>/RegisterOfTea</url-pattern>
+  </servlet-mapping>
+  <!-- 教师登录 -->
+  <servlet>
+    <servlet-name>LoginOfTeaServlet</servlet-name>
+    <servlet-class>_servlet.loginSystem.LoginOfTeaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginOfTeaServlet</servlet-name>
+    <url-pattern>/LoginOfTea</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TestConnServlet</servlet-name>
+    <servlet-class>_servlet.loginSystem.TestConnServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestConnServlet</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginMessServlet</servlet-name>
+    <servlet-class>_servlet._spider.LoginMessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginMessServlet</servlet-name>
+    <url-pattern>/loginMess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>KeepCookieServlet</servlet-name>
+    <servlet-class>_servlet._spider.KeepCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>KeepCookieServlet</servlet-name>
+    <url-pattern>/keepCookie</url-pattern>
+  </servlet-mapping>
+  <!-- 模拟登录教务处 -->
+  <servlet>
+    <servlet-name>LoginWithPServlet</servlet-name>
+    <servlet-class>_servlet._spider.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginWithPServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <!-- 解析课程表网页，得到课程信息 -->
+  <servlet>
+    <servlet-name>ParseTableServlet</servlet-name>
+    <servlet-class>_servlet._spider.ParseTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParseTableServlet</servlet-name>
+    <url-pattern>/parseHtml</url-pattern>
+  </servlet-mapping>
+  <!-- 接收文件 -->
+  <servlet>
+    <servlet-name>ReceiveFilesServlet</servlet-name>
+    <servlet-class>_servlet._spider.ParseTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceiveFilesServlet</servlet-name>
+    <url-pattern>/receive</url-pattern>
+  </servlet-mapping>
+  <!-- 主界面 -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

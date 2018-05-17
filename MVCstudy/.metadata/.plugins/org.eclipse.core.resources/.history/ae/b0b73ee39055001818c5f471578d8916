@@ -1,0 +1,57 @@
+package _servlet.loginSystem;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import _bean.loginSystem.User;
+
+/**
+ * 接收注册信息并存入数据库
+ * @author supercckai
+ *
+ */
+public class RegisterOfStuServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		Student user = new Student();
+		try {
+			//获取user属性
+			String stuID = req.getParameter("stuID");
+			int rStuID = Integer.parseInt(stuID);
+			String rUsername = req.getParameter("username");
+			String rPassword = req.getParameter("password");
+			//设置user属性
+			user.setStuID(rStuID);
+			user.setUsername(rUsername);
+			user.setPassword(rPassword);
+			/*
+			//写入数据库
+			boolean result = userDAO.insert(user);
+			System.out.println("RegisterResult: " + result);
+			if(result)
+				resp.getOutputStream().write("1".getBytes("utf-8"));
+			else
+				resp.getOutputStream().write("0".getBytes("utf-8"));
+			*/
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		doGet(req, resp);
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package _servlet._spider._searchSchedule;
+
+import javax.servlet.http.HttpServlet;
+
+/**
+ * 查询全院班级课表
+ * @author supercckai
+ *
+ */
+public class SearScheduleServlet extends HttpServlet {
+	
+	
+	
+}

@@ -1,0 +1,12 @@
+package _servlet.loginSystem;
+/**
+ * ²âÊÔÑ§Éú×¢²á
+ * @author supercckai
+ *
+ */
+public class _TestRegisterOfStu {
+	
+	String jsonStr = "{ \n \"stuID\":\"20154445\", \n \"username\":\"ÅÓ¿­\", "
+			+ "\n \"password\":\"123456\"}";
+	
+}

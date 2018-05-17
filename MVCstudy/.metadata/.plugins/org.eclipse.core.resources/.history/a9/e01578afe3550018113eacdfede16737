@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper  
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="dao.loginSystem.LabelDAO">  
+  	<!--查询label表的所有标签，返回List-->  
+    <select id="getLabelsOfAll" resultType="String">  
+        select labelName from label  
+    </select>
+  	
+    <!--查看某个学生的所有标签名称，返回List-->  
+    <select id="getLabelsOfOne" parameterType="String" resultType="String">  
+    	select label.labelName FROM student,student_label,label WHERE student_label.sl_stuID=student.stuID and student_label.sl_labelID=label.labelID and student.stuID=#{stuID}
+    </select>
+  
+    <!--查看具有某个标签的所有学生，返回List-->  
+    <select id="getStusOfLabel" parameterType="String" resultType="String">  
+         select student.stuName FROM label,student_label,student WHERE student_label.sl_stuID=student.stuID and student_label.sl_labelID=label.labelID and label.labelName=#{labelName} 
+    </select>  
+  	
+  	<!--在系统标签库里添加标签-->  
+    <insert id="addLabelInSys" parameterType="String">  
+        insert into label(labelName) values(#{labelName})  
+    </insert>
+  	
+    <!--为某个学生添加一个标签-->  
+    <insert id="addLabelOfOne" parameterType="String">  
+        insert into student_label(sl_stuID, sl_labelID) values(#{sl_stuID}, #{sl_labelID});  
+    </insert>
+  
+    <!--删除某个学生的某个标签-->  
+    <delete id="getLabelById" parameterType='String'>  
+        delete from student_label where sl_stuID=#{sl_stuID} and sl_labelID=#{sl_labelID}
+    </delete>  
+  
+  	<!--删除某个标签，原来有此标签的学生都会被删除此标签-->  
+    <delete id="getTeacherById" parameterType='String'>  
+        delete from student_label where sl_stuID=#{sl_stuID} and sl_labelID=#{sl_labelID}
+    </delete>
+  	
+</mapper> 

@@ -1,0 +1,15 @@
+package testOkhttp;
+
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttpClient;
+
+/**
+ * okhttpªÒ»°cookie
+ * @author supercckai
+ *
+ */
+public class test {
+	OkHttpClient client = new OkHttpClient.Builder().connectTimeout(5000, 
+			TimeUnit.MILLISECONDS);
+}

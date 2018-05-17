@@ -1,0 +1,10 @@
+package _dao.loginSystem;
+
+import _bean.loginSystem.Teacher;
+
+public interface StudentDAO {
+	public void insertStudent(Teacher teacher); //增加教师信息
+	public void deleteStudent(String teaID); //删除教师信息
+	public void updateStudent(Teacher teacher); //更新教师信息
+	public Teacher getStudentById(String teaID); //获取教师信息
+}

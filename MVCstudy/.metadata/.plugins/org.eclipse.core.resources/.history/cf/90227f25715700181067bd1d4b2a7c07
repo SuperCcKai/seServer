@@ -1,0 +1,92 @@
+package _servlet._spider._searchSchedule;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.client.CookieStore;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+
+import _utils._spider.CookieUtil;
+
+public class LoginMessServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//BufferedImage img = null;
+		//定义即将访问的链接，该链接是验证码图片
+		String urlStr = "https://zhjw.neu.edu.cn/ACTIONVALIDATERANDOMPICTURE"
+				+ ".APPPROCESS?id=0.4607196975898509";
+		InputStream in = null;
+		OutputStream out = null;
+		CookieStore readCookieStore = CookieUtil.readCookieStore(request, "willLoginCookie");
+		try {
+			/*
+			URL url = new URL(urlStr);
+			//初始化一个链接到那个url的连接
+			URLConnection conn = url.openConnection();
+			//开始实际的连接
+			//conn.connect();
+			
+			//得到url的输入流
+			in = conn.getInputStream();
+			//设置数据缓冲
+			byte[] buff = new byte[1024];
+			//读取到的数据长度
+			int len;
+			//输出的文件流保存图片至服务器端本地
+			out = new FileOutputStream( 
+					request.getSession().getServletContext().getRealPath("/")
+				  + "/_resource/img/checkCode.jpg");
+			while( (len=in.read(buff) ) != -1) {
+				out.write(buff, 0, len);
+			}
+			*/
+			CloseableHttpClient httpClient = HttpClientBuilder.create()
+					.setDefaultCookieStore(readCookieStore).build();
+			HttpGet httpGet = new HttpGet(urlStr);
+			CloseableHttpResponse httpResponse = httpClient.execute(httpGet);
+			//输出的文件流保存图片至服务器端本地
+			out = new FileOutputStream( 
+					request.getSession().getServletContext().getRealPath("/")
+				  + "/_resource/img/checkCode.jpg");
+			//得到网络资源的字节数组
+			HttpEntity entity = httpResponse.getEntity();
+			if(entity != null) {
+				in = entity.getContent();
+				//缓冲数组
+				byte[] buff = new byte[1024];
+				int len = 0;
+				while( (len=in.read(buff)) != -1 ) {
+					out.write(buff, 0, len);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			//关闭输入流
+			try {
+				in.close();
+				out.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		//System.out.println(result);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

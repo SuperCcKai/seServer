@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed May 16 23:31:21 CST 2018
+org.eclipse.jst.jee.server\:os=D\:\\tomcat\\webapps\\os
+org.eclipse.jst.jee.server\:newServer=D\:\\tomcat\\webapps\\newServer

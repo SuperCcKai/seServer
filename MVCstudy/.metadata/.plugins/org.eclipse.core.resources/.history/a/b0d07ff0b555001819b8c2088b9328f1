@@ -1,0 +1,11 @@
+package _utils._servlet;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class ServletUtil {
+	
+	public static String getReqBody(HttpServletRequest req) throws Exception {
+		
+	}
+	
+}

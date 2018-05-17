@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testCookie" project="testOkhttp" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="testOkhttp.testCookie" time="1.048">
+    <testcase name="test" classname="testOkhttp.testCookie" time="1.048"/>
+  </testsuite>
+</testrun>

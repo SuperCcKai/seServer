@@ -1,0 +1,19 @@
+package _servlet.loginSystem;
+
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+
+/**
+ * ≤‚ ‘—ß…˙◊¢≤·
+ * @author supercckai
+ *
+ */
+public class _TestRegisterOfStu {
+	
+	String jsonStr = "{ \n \"stuID\":\"20154445\", \n \"username\":\"≈”ø≠\", "
+			+ "\n \"password\":\"123456\"}";
+	CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+	HttpPost httpPost = new HttpPost(urlStr);
+	
+}

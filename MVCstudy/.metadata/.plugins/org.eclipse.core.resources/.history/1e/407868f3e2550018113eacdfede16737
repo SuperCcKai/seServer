@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper  
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="dao.loginSystem.TeacherDAO">  
+  
+    <!--往teacher表中插入教师信息-->  
+    <!-- parameterType:传入参数的类型 -->
+    <insert id="insertTeacher" parameterType="Teacher">  
+        insert into teacher(teaID,teaName,teaPassword) values(#{teaID},#{teaName},#{teaPassword})  
+    </insert>  
+  
+    <!--根据工号删除相关的教师信息-->  
+    <delete id="deleteTeacherById">  
+        delete from teacher where teaID=#{teaID}  
+    </delete>  
+  
+    <!--根据工号更新相关的教师信息-->  
+    <update id="updateTeacherById" parameterType="Teacher">  
+        update teacher set teaName=#{teaName},teaPassword=#{teaPassword} where teaID=#{teaID}  
+    </update>  
+  
+    <!--根据工号查询相关的教师信息-->  
+    <select id="getTeacherById" resultType="Teacher">  
+        select * from teacher where teaID=#{teaID}  
+    </select>  
+  
+</mapper> 
